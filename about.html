@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            background-color: #f0f0f0; /* Gray background for the entire page */
+        }
+        .background-image {
+            background: none; /* No background image */
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+        .content {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            color: #fff;
+            max-width: 800px; /* Increased max-width for better readability */
+            padding: 40px;
+            border: 5px solid #4e271f;
+            position: relative;
+            z-index: 1;
+            min-height: 100vh; /* Ensures content fills the viewport height */
+            box-sizing: border-box; /* Ensures padding is included in the height */
+        }
+        .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .navigation {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            z-index: 1;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .top-left-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+        .top-left-button img {
+            width: 100px;
+            height: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="overlay"></div>
+        <div class="navigation">
+            <a href="about.html">About</a>
+            <a href="contact.html">Join us!</a>
+            <a href="updates.html">Updates</a>
+        </div>
+        <div class="top-left-button">
+            <a href="index.html"><img src="/Images/Copy of Amherst Logo.png" alt="Home Button"></a>
+        </div>
+        <div class="content">
+            <h1>About</h1>
+            <p>This initiative aims to align Amherst's municipal elections with federal and local cycles. By switching to "on-cycle" elections, Amherst will improve democracy and cut down on unnecessary costs. If successfully passed, Amherst would be the first Massachusetts city to make such a change, setting the pace for the rest of the state.</p>
+            
+            <h2>FAQ</h2>
+            <p><b>How do on-cycle elections improve voter turnout?</b></p>
+            <p>By consolidating local races with high-visibility national and state elections, on-cycle elections benefit from greater public awareness and mobilization. Unsurprisingly, too, when voters have fewer elections to pay attention to, they suffer less from "voter fatigue" and participate more.</p>
+
+            <p><b>How do on-cycle elections increase representation?</b></p>
+            <p>In off-cycle elections, the resources, time, and information required to vote can be prohibitive. As a result, studies have shown that voter bases in odd-year elections are whiter, richer, higher-educated, and older than in even-years. Aligning elections improves representation and increases access.</p>
+            
+        </div>
+    </div>
+</body>
+</html>
